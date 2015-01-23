@@ -20,6 +20,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[hidelinks]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{graphicx}
+\usepackage[defaultsans]{opensans}
+\usepackage[]{fontenc}
+\usepackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+
+
+\newfontfamily\bodyfont[]{TeX Gyre Heros}
+\newfontfamily\thinfont[]{TeX Gyre Heros}
+\newfontfamily\headingfont[]{TeX Gyre Heros}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Mapping=tex-text, Color=textcolor]{TeX Gyre Heros}
 
 \begin{document}
 
@@ -30,6 +41,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
+\includegraphics[width=\textwidth]{images/photo.png}
 \section{contacto}
 Sevilla (Sevilla)
 España
@@ -38,7 +50,8 @@ España
 ~
 \href{mailto:bigomby@gmail.com}{bigomby@gmail.com}
 \href{http://google.com/+DiegoFernandezBarrera}{+Diego Fernández}
-\href{https://github.com/Bigomby}{GitHub: Bigomby}
+\href{es.linkedin.com/in/dieferbar}{Linkedin}
+\href{https://github.com/Bigomby}{GitHub}
 \section{idiomas}
 Español nativo
 Inglés nivel medio
@@ -179,12 +192,17 @@ con sistemas XBee.}
 
 \section{intereses}
 
-\textbf{Profesional:} Me gustaría dedicarme al desarrollo y diseño web, programación, redes de datos, aplicaciones
+\begin{description}
+  \item[Profesional] \hfill \\
+Me gustaría dedicarme al desarrollo y diseño web, programación, redes de datos, aplicaciones
 móviles o a la administración de sistemas. Cualquier cosa relacionada con las telecomunicaciones
 en general.
 
-\textbf{Personal:} Me gusta el análisis de la seguridad en las tecnologías de la información
+\item[Personal] \hfill \\
+Me gusta el análisis de la seguridad en las tecnologías de la información
 (Hacking, pentesting, criptoanálisis, etc.) y sobre todo me gusta arreglar cosas.
+\end{description}
+
 
 
 

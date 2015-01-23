@@ -21,6 +21,15 @@
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
 
+% FLATUI Colors
+\definecolor{midnight}{HTML}{2c3e50}
+\definecolor{pomegranate}{HTML}{c0392b}
+\definecolor{belize}{HTML}{2980b9}
+\definecolor{greensea}{HTML}{16a085}
+\definecolor{pumpkin}{HTML}{d35400}
+\definecolor{wisteria}{HTML}{8e44ad}
+\definecolor{nephritis}{HTML}{27ae60}
+
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
@@ -37,27 +46,11 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{gray}
+  \colorlet{fillheader}{pomegranate}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
-\colorlet{headercolor}{gray}
-
-%%%%%%%%%
-% Fonts %
-%%%%%%%%%
-
-\RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-
-\newfontfamily\bodyfont[]{TeX Gyre Heros}
-\newfontfamily\thinfont[]{TeX Gyre Heros}
-\newfontfamily\headingfont[]{TeX Gyre Heros}
-
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{TeX Gyre Heros}
-
-%\setmathfont{XITS Math}
+\colorlet{headercolor}{midnight}
 
 %%%%%%%%%%
 % Header %
@@ -98,12 +91,10 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\or%
-        brown\else%
+        belize\or%
+        greensea\or%
+        pumpkin\or%
+        wisteria\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -173,5 +164,5 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
