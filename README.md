@@ -1,7 +1,8 @@
 # Currimulum Vitae
-Última versión de mi curriculum usando la plantilla de Adrien Friggeri para LaTeX. Pendente de añadir:
+Última versión de mi curriculum usando la plantilla de Adrien Friggeri para LaTeX.
 
-- [X] Foto
-- [X] Enlace a Linkedin
-- [ ] Trabajos realizados durante los estudios
-- [ ] Más habilidades
+## Instalación de dependencias
+
+```
+apt-get install texlive-xetex texlive-latex-extra texlive-fonts-extra texlive-math-extra
+```
