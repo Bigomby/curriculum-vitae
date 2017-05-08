@@ -21,14 +21,12 @@
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
 
-% FLATUI Colors
-\definecolor{midnight}{HTML}{2c3e50}
-\definecolor{pomegranate}{HTML}{c0392b}
-\definecolor{belize}{HTML}{2980b9}
-\definecolor{greensea}{HTML}{16a085}
-\definecolor{pumpkin}{HTML}{d35400}
-\definecolor{wisteria}{HTML}{8e44ad}
-\definecolor{nephritis}{HTML}{27ae60}
+% Material Colors
+\definecolor{red500}{HTML}{F44336}
+\definecolor{green500}{HTML}{4CAF50}
+\definecolor{teal500}{HTML}{009688}
+\definecolor{blue900}{HTML}{0D47A1}
+\definecolor{grey900}{HTML}{212121}
 
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
@@ -46,11 +44,11 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{pomegranate}
+  \colorlet{fillheader}{blue900}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
-\colorlet{headercolor}{midnight}
+\colorlet{headercolor}{grey900}
 
 %%%%%%%%%%
 % Header %
@@ -91,10 +89,9 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        belize\or%
-        greensea\or%
-        pumpkin\or%
-        wisteria\else%
+        red500\or%
+        green500\or%
+        blue900\else%
         headercolor\fi%
     } #1#2#3%
   }%
